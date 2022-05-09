@@ -146,13 +146,6 @@ end
 
 # Desarrollo
 
-Será evaluado el día de la fecha de entrega. Esta evaluación será mediante preguntas y problemas con la misma modalidad que las evaluaciones parciales. Se deberá aprobar tanto el trabajo entregado como la evaluación. Esta última puede incluir preguntas sobre:
-
-* Items particulares sobre los ejercicios de esta guía
-* Conceptos teóricos necesarios para realizar los ejercicios
-* DFT
-* Transformada Z
-
 ![screenshot.png][nextjournal#file#426d1501-3a13-436b-8626-baaa90743947]
 
 La duración de cada señal para ser considerada un dígito es variable. Cada dígito debe tener una longitud de 70 ms como mínimo, aunque algunos equipos pueden aceptar menor duración de pulso
@@ -175,8 +168,6 @@ wavwrite(x, "/results/out.wav"; Fs=sr)
 [out.wav][nextjournal#output#2e2671f2-1b8d-4f1d-aecc-545d1271c929#out.wav]
 
 ## 1. Caracterización temporal
-
-#### Caracterizar y graficar la señal en el tiempo. Escuchar la señal e identificar dentro de la misma la sección donde se realizó el discado. Distinguir las zonas de la señal en donde se están transmitiendo los símbolos y los silencios.
 
 ```julia id=00f9cce1-407f-41f0-a89a-5df7b192c0c5
 time_sample=(0:(length(x)-1))/sr;
@@ -300,10 +291,6 @@ A continuación se procede a mostrar una tabla de símbolos y frecuencias fundam
 ![Tabla.jpg][nextjournal#file#d7218fa5-abe0-419f-884c-75df324c0184]
 
 ## 2. Caracterización espectral
-
-#### Analizar y graficar el espectro de los distintos símbolos de la señal en forma individual. Comparar los espectros entre sí. 
-
-####  Realizar la transformada de Fourier del discado completo. ¿Se puede identificar la secuencia a partir de este espectro?
 
 En primer instancia procedo a graficar el módulo del espectro para la señal completa.
 
@@ -480,8 +467,6 @@ Por último vemos que el cuarto y sexto símbolo son distintos entre si y  a tod
 
 ## 3. Espectrograma
 
-#### Realizar la transformada de corto tiempo (espectrograma) de la señal y caracterizarla a partir de la misma. Comprobar y mostrar en gráficos el efecto de distintas ventanas (tipo de ventana y duración) en la visualización del espectrograma.
-
 Se procede a armar dos ventanas donde lo único que cambia es el ancho de la misma
 
 ```julia id=9ab3c8d0-c0a3-4c8b-b64d-ad4ce253f6c6
@@ -518,8 +503,6 @@ Se puede observar que en el espectrograma de la ventana rectangular("ancha") que
 
 ## 4. Muestreo
 
-#### ¿Cuál es la frecuencia mínima de muestreo requerida para poder trabajar digitalmente con la señal de discado?
-
 Según el teorema de muestreo de Nyquist una señal, en este caso x(t), el muestreo debe cumplir con :
 
 $$
@@ -542,8 +525,6 @@ Por lo que se procede a mostrar la siguiente tabla:
 ![Tabla2.png.jpg][nextjournal#file#71237272-f2ba-4781-a4c4-f0efce96cfe5]
 
 ## 5. Detección de dígitos
-
-#### Utilizar el espectrograma y la transformada de Fourier para encontrar la secuencia de dígitos marcada por inspección visual. Mostrar en los gráficos.
 
 ```julia id=9b97edd3-8ccf-4d87-82af-52cff4f513dc
 sphamm
