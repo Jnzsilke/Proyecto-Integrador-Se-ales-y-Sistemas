@@ -2,23 +2,6 @@
 
 <h2 class="pm-node nj-subtitle">Demodulación de tonos de discado de teléfono</h2>
 
-### Nombre: Jonathan Gabriel Niz Silke
-
-### Padrón:  98722
-
-# Requisitos para la aprobación
-
-Este trabajo práctico debe ser entregado subiendo al campus en la fecha indicada un archivo comprimido que incluya todo el material relevante. Debe incluir al menos
-
-* Un link al documento de NextJournal publicado. Debe incluir los resultados pedidos con las explicaciones, imágenes, código y gráficos que considere pertinentes.
-* Un PDF del informe (puede imprimir la página en pdf)
-
-Verifique que al ejecutar el notebook completo (opción \`Run All\`), el código corre correctamente y genera las salidas del notebook publicado y entregado. 
-
-(Si no lo hace en NextJournal, el archivo comprimido debe contener al menos las respuestas y gráficos solicitados junto el código usado.)
-
-Todos los gráficos deberán tener título, comentarios en ambos ejes sobre la unidad a representar y el eje de absisas debe estar en unidades de tiempo o frecuencia según corresponda.
-
 # Introducción
 
 El sistema de discado por tonos de nuestros teléfonos utiliza los principios de la codificación DTMF, o Dual Tone Multi Frequency. Este sistema de codificación convierte los códigos de información (los 10 dígitos decimales en el caso del discado) en otras tantas señales analógicas, cuya frecuencia debe estar contenida en el rango de las frecuencias de la voz humana, o más bien en el rango de frecuencias del canal telefónico. De este modo se crea un sistema de codificación que puede ser interpretado por todos los sistemas que se conectan a la red telefónica, como (obviamente) teléfonos, pero también, modems, máquinas de fax, centrales telefónicas, hubs, switches, y hasta las distribuidoras de televisión por cable.
